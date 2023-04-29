@@ -52,7 +52,7 @@
                 clearInterval(intervalId);
             }
         } else {
-            console.log('Target div not found, retrying in 1 second...');
+            console.log('');
         }
     }
 
