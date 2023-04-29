@@ -82,6 +82,7 @@
                     const iconCell = link.closest('li').querySelector('.table-cell.member-icons.icons');
                     if (iconCell) {
                         if (outcomeValue.toLowerCase().includes("lost")) {
+                            clearInterval(intervalId);
                             const newDiv = document.createElement('div');
                             // create a new image element
                             const svg = `
