@@ -65,7 +65,6 @@
     let intervalId = setInterval(function() {
         const links = document.querySelectorAll('a[rel="noopener noreferrer"]');
         if (links.length === 0) {
-            console.log('No links with rel="noopener noreferrer" found on the page.');
             return;
         }
 
