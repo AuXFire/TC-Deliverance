@@ -6,6 +6,7 @@
 // @match        https://www.torn.com/*
 // @author       Auxxfire
 // @grant        GM_xmlhttpRequest
+// @updateURL    https://github.com/AuXFire/TC-Deliverance/blob/main/TC-Deliverance.js
 // ==/UserScript==
 
 // FACTION API: null
@@ -332,8 +333,9 @@
                         const li = document.createElement('li');
 
                         // Create a span element to hold the member username
-                        const hospSpan = document.createElement('span');
-                        hospSpan.textContent = memberData.name;
+                        const MAX_NAME_LENGTH = 12;
+                        let truncatedName = memberData.name.substring(0, MAX_NAME_LENGTH);
+                        usernameSpan.textContent = truncatedName;
                         hospSpan.style.color = 'black';
                         hospSpan.style.display = 'inline-block';
                         hospSpan.style.marginRight = '10px';
