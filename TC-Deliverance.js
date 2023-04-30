@@ -2,7 +2,7 @@
 // @name         War List - Deliverance
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Places a faction ID input field and lists all attackable members. Updates 1 time a second. Be careful not to overdo your API calls with any other scripts you are using in conjunction with this.
+// @description  Places a faction ID input field and lists all attackable members. Updates 1 time a second. Be careful not to overdo your API calls with any other scripts you are using in conjunction with this. Keeps track of attack wins/losses against oppenent. Adds an icon indicating last attack result. "RED" icon = Loss, "GREEN" = Win/Stalemate
 // @match        https://www.torn.com/*
 // @author       Auxxfire
 // @grant        GM_xmlhttpRequest
